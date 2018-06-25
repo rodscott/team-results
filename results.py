@@ -5,7 +5,10 @@ import argparse
 def main():
     check_python3()
     category, team_size = capture_commandline_args()
-    print('Category: {category}, Team size: {team_size}'.format(category=category, team_size=team_size))
+    print(
+        'Category: {category}, Team size: {team_size}'
+        .format(category=category, team_size=team_size)
+    )
 
 
 def check_python3():
