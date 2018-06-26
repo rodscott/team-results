@@ -11,10 +11,18 @@ def main():
         .format(filename=filename, category=category, team_size=team_size)
     )
     print(read_results_csv_file('fixtures/results.csv'))
-    print({'MSEN': [
-        {'club': 'A', 'counters': [('A1', 2), ('A2', 3), ('A3', 5)], 'score': 10},
-        {'club': 'B', 'counters': [('B1', 1), ('B2', 4), ('B3', 6)], 'score': 11}
-    ]})
+    print({
+        'MSEN': [
+            {'club': 'A', 'counters': [('A1', 2), ('A2', 3), ('A3', 5)], 'score': 10},
+            {'club': 'B', 'counters': [('B1', 1), ('B2', 4), ('B3', 6)], 'score': 11},
+            {'club': 'C', 'counters': [('C1', 7), ('C2', 8), ('C3', 20)], 'score': 35}
+        ],
+        'WSEN': [
+            {'club': 'A', 'counters': [('A1', 4), ('A2', 6), ('A3', 8)], 'score': 18},
+            {'club': 'B', 'counters': [('B1', 3), ('B2', 11), ('B3', 15)], 'score': 29},
+            {'club': 'C', 'counters': [('C1', 2), ('C2', 9), ('C3', 20)], 'score': 31}
+        ]
+    })
 
 
 def check_python3():
@@ -33,20 +41,31 @@ def capture_commandline_args():
 
 
 def read_results_csv_file(filename):
-    to_return = []
     with open(filename) as resultsfile:
         has_header = csv.Sniffer().has_header(resultsfile.read(1024))
         resultsfile.seek(0)
         reader = csv.DictReader(resultsfile, fieldnames=['position', 'name', 'category', 'club', 'time'], restkey='extra')
         if has_header:
             next(reader) # skip column names row 
-        for row in reader:
-            to_return.append(row)
-    return to_return
+        for result in reader:
+            add_to_team(**result)
 
 
-def get_teams(team_size, category):
-    []
+def add_to_team(position, name, category, club, time):
+    pass
+
+class Results:
+
+
+    def __init__(self, filename):
+        self.data = dict()
+
+
+    def add(self, position, name, category, club, time):
+        if category in self.data:
+            pass
+        else:
+            self.data[club] = 
 
 
 if __name__ == "__main__":
