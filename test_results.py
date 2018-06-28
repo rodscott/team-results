@@ -17,5 +17,12 @@ def test_non_default_using_long_commandline_arguments():
         assert ('race.csv', 'M60', 8) == results.capture_commandline_args()
 
 
-def test_read_results_csv_file():   
-    assert 14 == len(results.read_results_csv_file('fixtures/results.csv'))
+def test_read_results_csv_file():
+    r = results.Results()
+    results.read_results_csv_file('fixtures/results.csv', r)
+    assert 4 == len(r.data)
+
+def test_result_add():
+    r = results.Results()
+    r.add(1, 'Runner', 'MSEN', 'Test', '00:34:45')
+    assert 'Test' in r.data

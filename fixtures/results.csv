@@ -1,15 +1,29 @@
-position, name, category, club, time
-1, A Runner 1, MSEN, A, 00:34:40
-2, B Runner 1, MSEN, B, 00:36:54
-3, A Runner 2, MSEN, A, 00:37:02
-4, C Runner 1, MSEN, C, 00:49:36
-4, A Runner 3, MSEN, A, 00:51:09
-5, B Runner 2, MSEN, B, 00:51:13
-6, D Runner 1, MSEN, D, 00:51:38
-6, B Runner 2, MSEN, B, 00:52:12
-7, C Runner 2, MSEN, C, 00:53:35
-8, A Runner 4, MSEN, A, 00:53:36
-9, B Runner 3, MSEN, B, 00:53:47
-10, D Runner 2, MSEN, D, 00:54:02
-11, C Runner 3, MSEN, C, 00:55:23
-12, D Runner 3, MSEN, D, 00:55:38
+position,name,category,club,time
+1,"A Runner W40 1","W40","A",00:34:40
+9,"C Runner M50 2","M50","C",00:53:35
+2,"B Runner W40 1","W40","B",00:36:54
+14,"D Runner WSEN 3","WSEN","D",00:55:38
+24,"C Runner 1","MSEN","C",00:49:36
+12,"D Runner M50 2","M50","D",00:54:02
+16,"B Runner 2","MSEN","B",00:51:13
+10,"A Runner 4","MSEN","A",00:53:36
+8,"B Runner WSEN 2","WSEN","B",00:52:12
+3,"A Runner M40 2","M40","A",00:37:02
+5,"A Runner M50 3","M50","A",00:51:09
+11,"B Runner 3","MSEN","B",00:53:47
+13,"C Runner 3","MSEN","C",00:55:23
+7,"D Runner 1","MSEN","D",00:51:38
+15,"A Runner M40 1","M40","A",00:34:40
+6,"C Runner M40 2","M40","C",00:53:35
+17,"B Runner M40 1","M40","B",00:36:54
+18,"D Runner M40 3","M40","D",00:55:38
+19,"C Runner M40 1","M40","C",00:49:36
+20,"D Runner M40 2","M40","D",00:54:02
+21,"B Runner M40 2","M40","B",00:51:13
+22,"A Runner M40 4","M40","A",00:53:36
+23,"B Runner M40 2","M40","B",00:52:12
+4,"A Runner M40 2","M40","A",00:37:02
+25,"A Runner M40 3","M40","A",00:51:09
+26,"B Runner M40 3","M40","B",00:53:47
+27,"C Runner M40 3","M40","C",00:55:23
+28,"D Runner M40 1","M40","D",00:51:38
